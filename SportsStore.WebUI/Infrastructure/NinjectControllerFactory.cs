@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using Ninject;
 using System.Web.Mvc;
-using Moq;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 using SportsStore.Domain.Concrete;
