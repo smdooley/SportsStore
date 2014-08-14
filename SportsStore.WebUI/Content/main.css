@@ -125,6 +125,28 @@ body {
     padding: .3em;
 }
 
+    #categories a {
+        font: bold 1.1em 'Arial Narrow','Franklin Gothic Medium',Arial;
+        display: block;
+        text-decoration: none;
+        padding: .6em;
+        color: #000;
+        border-bottom: 1px solid silver;
+    }
+
+        #categories a.selected {
+            background-color: #666;
+            color: #fff;
+        }
+
+        #categories a:hover {
+            background-color: #ccc;
+        }
+
+        #categories a.selected:hover {
+            background-color: #666;
+        }
+
 .item {
     border-top: 1px dotted gray;
     padding-top: .7em;
