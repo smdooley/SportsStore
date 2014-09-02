@@ -207,7 +207,24 @@ form {
     cursor: pointer;
 }
 
+h2 {
+    margin-top: .3em;
+}
 
+tfoot td {
+    border-top: 1px dotted gray;
+    font-weight: bold;
+}
+
+.actionButtons a, input.actionButtons {
+    font: .8em Arial;
+    color: #fff;
+    margin: .5em;
+    text-decoration: none;
+    padding: .15em 1.5em .2em 1.5em;
+    background-color: #353535;
+    border: 1px solid #000;
+}
 
 
 
