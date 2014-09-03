@@ -24,6 +24,15 @@
                 <td>@line.Product.Name</td>
                 <td>@line.Product.Price.ToString("c")</td>
                 <td>@((line.Quantity * line.Product.Price).ToString("c"))</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        @Html.Hidden("ProductId", line.Product.ProductID)
+                        @Html.HiddenFor(x => x.ReturnUrl)
+                        
+                        <input class="actionButtons" type="submit" value="Remove" />
+                    }
+                </td>
             </tr>
         }
     </tbody>

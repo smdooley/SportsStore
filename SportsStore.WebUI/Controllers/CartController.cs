@@ -67,5 +67,10 @@ namespace SportsStore.WebUI.Controllers
                 ReturnUrl = returnUrl
             });
         }
+
+        public PartialViewResult Summary(Cart cart)
+        {
+            return PartialView(cart);
+        }
     }
 }
