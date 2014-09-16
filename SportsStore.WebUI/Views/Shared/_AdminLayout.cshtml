@@ -7,8 +7,10 @@
     <link href="@Url.Content("~/Content/Admin.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
-        @RenderBody()
-    </div>
+    @if (TempData["message"] != null)
+    {
+        <div class="message">@TempData["message"]</div>
+    }
+    @RenderBody()
 </body>
 </html>
