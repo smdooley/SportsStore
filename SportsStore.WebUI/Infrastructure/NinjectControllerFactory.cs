@@ -8,6 +8,8 @@ using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 using SportsStore.Domain.Concrete;
 using System.Configuration;
+using SportsStore.WebUI.Infrastructure.Abstract;
+using SportsStore.WebUI.Infrastructure.Concrete;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -52,6 +54,8 @@ namespace SportsStore.WebUI.Infrastructure
 
             ninjectKernel.Bind<IOrderProcessor>()
                 .To<EmailOrderProcessor>().WithConstructorArgument("settings", emailSettings);
+
+            ninjectKernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }

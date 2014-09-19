@@ -68,6 +68,7 @@
     <Compile Include="TestNavigationController.cs" />
     <Compile Include="CartControllerTest.cs" />
     <Compile Include="AdminControllerTest.cs" />
+    <Compile Include="AccountControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
