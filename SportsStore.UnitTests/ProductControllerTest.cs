@@ -180,7 +180,7 @@ namespace SportsStore.UnitTests
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.IsNotInstanceOfType(result, typeof(FileResult));
+            Assert.IsInstanceOfType(result, typeof(FileResult));
             Assert.AreEqual(product.ImageMimeType, ((FileResult)result).ContentType);
         }
 
